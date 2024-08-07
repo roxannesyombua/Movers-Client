@@ -1,0 +1,85 @@
+.navbar-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-bar {
+    background-color: #f0f4ff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .top-bar p {
+    margin: 0;
+  }
+  
+  .social-icons a {
+    margin-left: 10px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .social-icons i {
+    font-size: 14px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .nav-links a.active {
+    color: #28a745;
+  }
+  
+  .auth-buttons {
+    display: flex;
+  }
+  
+  .login-btn, .signup-btn {
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: #a0522d;
+    color: #fff;
+  }
+  
+  .signup-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
