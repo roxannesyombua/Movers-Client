@@ -1,0 +1,96 @@
+.signup-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px 5px rgba(0, 168, 79, 0.5);
+  }
+  
+  .image-section {
+    flex: 1;
+    background-image: url('https://plus.unsplash.com/premium_photo-1679858780540-83cf9db66d55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW92ZXJzfGVufDB8fDB8fHww'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-text h1, .image-text p {
+    margin: 0;
+  }
+  
+  .form-section {
+    flex: 1;
+    background-color: #00A84F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #00A84F;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .google-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #00A84F;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-signup i {
+    margin-right: 10px;
+  }
+  
+  .or-divider {
+    margin: 20px 0;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
