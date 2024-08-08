@@ -1,10 +1,9 @@
 import React from 'react';
-import Home from './components/Home';
-
+import SignupForm from './components/SignupForm';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <SignupForm/>
       {/* Other components go here */}
     </div>
   );
