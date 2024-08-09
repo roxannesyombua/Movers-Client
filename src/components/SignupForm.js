@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignupForm.css'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -8,6 +9,8 @@ const SignupForm = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
+
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -43,6 +46,7 @@ const SignupForm = () => {
         .catch(error => {
             setError(error.message || 'An error occurred. Please try again later.');
         });
+        navigate('/');
     };
 
     return (

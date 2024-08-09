@@ -1,4 +1,3 @@
-
 /* Apply to the login component container */
 /* .login-wrapper {
     position: fixed;
@@ -14,7 +13,7 @@
     backdrop-filter: blur(5px);
   }
    */
-   .login-container {
+  .login-container {
     background-color: white;
     border-radius: 10px;
     display: flex;
