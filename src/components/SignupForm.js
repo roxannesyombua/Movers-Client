@@ -42,11 +42,11 @@ const SignupForm = () => {
             setUsername('');
             setEmail('');
             setPassword('');
+            navigate('/'); // Redirect to home page after successful registration
         })
         .catch(error => {
             setError(error.message || 'An error occurred. Please try again later.');
         });
-        navigate('/');
     };
 
     return (
