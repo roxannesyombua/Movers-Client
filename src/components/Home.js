@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* Best Movers Section */}
       <section className="best-movers-section">
-        <h2>Welcome to the Best Movers</h2>
+        <h2>Welcome to the Marvel Movers</h2>
         <ul>
           <li>Your requirement is our wish</li>
           <li>Moving is quick and easy</li>

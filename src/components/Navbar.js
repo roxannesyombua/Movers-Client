@@ -9,13 +9,13 @@ const Navbar = () => {
       <div className="top-bar">
         <p>Welcome to movers | 10 years experience | How to find us | Give us feedback</p>
         <div className="social-icons">
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="Contact"><i className="fab fa-facebook-f"></i></a>
+          <a href="Contact"><i className="fab fa-twitter"></i></a>
+          <a href="Contact"><i className="fab fa-instagram"></i></a>
         </div>
       </div>
       <nav className="navbar">
-        <div className="logo">MOVERS</div>
+        <div className="logo"> MARVELMOVERS</div>
         <ul className="nav-links">
           <li><a href="#" className="active">HOME</a></li>
           <li><a href="Services">Services</a></li>

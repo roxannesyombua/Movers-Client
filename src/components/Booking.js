@@ -25,18 +25,21 @@ const Booking = () => {
             <input type="time" name="time" />
           </label>
           <label>
-            Room type
-            <input type="text" name="roomtype" />
+            Room Type
+            <select name="roomtype">
+              <option value=" " disabled selected>Select a Room Type</option>
+              <option value="studio">Studio</option>
+              <option value="bedsitter">Bed Sitter</option>
+              <option value="onebedroom">One Bedroom</option>
+              <option value="twobedroom">Two Bedroom</option>
+            </select>
+
           </label>
           <button type="submit">Get Quotation</button>
         </form>
       </div>
       <div className="map-section">
-        <img src="your-image-url-here" alt="Map" />
-        <div className="locations">
-          <p>Current location</p>
-          <p>Where to</p>
-        </div>
+       
       </div>
     </div>
   );

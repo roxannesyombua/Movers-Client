@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const handleBookingRedirect = () => {
+    alert("successful login")
+    navigate('/Booking');
+  };
+
   return (
     <div className="blur-background">
       <div className="login-container">
@@ -10,7 +19,7 @@ const Login = () => {
           <form>
             <input type="text" placeholder="Username or email" />
             <input type="password" placeholder="Password" />
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={handleBookingRedirect}>Submit</button>
           </form>
           <div className="or">OR</div>
           <button className="google-login">

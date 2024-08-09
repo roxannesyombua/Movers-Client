@@ -22,7 +22,7 @@ const ContactUs = () => {
         <div className="contact-item">
           <i className="fas fa-envelope"></i>
           <h3>CONTACT US</h3>
-          <p> movershub@gmail.com</p>
+          <p> marvelmovers@gmail.com</p>
         </div>
       </div>
     </div>

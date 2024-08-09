@@ -1,8 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignupForm.css'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const SignupForm = () => {
+
+  const navigate = useNavigate();
+
+   const handleLoginRedirect = () => {
+    alert("successful signup")
+    navigate('/Login'); 
+  };
+
   return (
     <div className="signup-container">
       <div className="image-section">
@@ -17,13 +26,14 @@ const SignupForm = () => {
           <input type="text" placeholder="Username name" />
           <input type="email" placeholder="Email address" />
           <input type="password" placeholder="Password" />
-          <button type="submit">SIGN UP</button>
+          <button type="submit" onClick={handleLoginRedirect}>SIGN UP</button>
         </form>
         <div className="or-divider">OR</div>
         <button className="google-signup">
           <a href='/Login'>Have an account? Login</a>
         </button>
       </div>
+      
     </div>
   );
 };
