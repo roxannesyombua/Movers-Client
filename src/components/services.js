@@ -66,7 +66,7 @@ const Services = () => {
                 </ul>
             </section>
             <button className="book-now-btn">
-                <a href="/Booking"> Book Now </a>
+                <a href="/Quotation"> Book Now </a>
             </button>
 
             <footer>

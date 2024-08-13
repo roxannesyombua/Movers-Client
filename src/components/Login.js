@@ -27,7 +27,7 @@ const Login = () => {
       if (status === 200) {
         // Store token in localStorage
         localStorage.setItem('access_token', body.access_token);
-        window.location.href = '/'; // Redirect to home or dashboard
+        window.location.href = '/Services'; // Redirect to home or dashboard
       } else {
         setError(body.message || 'Login failed');
       }
@@ -35,7 +35,7 @@ const Login = () => {
     .catch(err => {
       setError('An error occurred. Please try again later.');
     });
-    navigate('/')
+    navigate('/Services')
   };
   
 

@@ -10,6 +10,7 @@ import SignupForm from './components/SignupForm';
 import Login from './components/Login';
 import ContactUs from './components/Contactus';
 import Booking from './components/Booking';
+import Quotation from './components/Quotation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   {
     path: "/Booking",
     element: <Booking />
+  },
+  {
+    path: "/Quotation",
+    element: <Quotation />
   }
   
  ])

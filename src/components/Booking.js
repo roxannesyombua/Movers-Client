@@ -35,7 +35,12 @@ const Booking = () => {
             </select>
 
           </label>
+          
+          
+          <a href = '/Quotation'>
           <button type="submit">Get Quotation</button>
+          </a>
+          
         </form>
       </div>
       <div className="map-section">
