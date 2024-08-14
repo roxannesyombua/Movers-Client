@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Booking.css';
 
 const Booking = () => {
+  const navigate = useNavigate();
+  const handleQuotation = () => {
+    navigate('/Quotation');
+  };
+
   return (
     <div className="booking-container">
       <div className="booking-form">
@@ -35,16 +41,16 @@ const Booking = () => {
             </select>
 
           </label>
-          
-          
-          <a href = '/Quotation'>
-          <button type="submit">Get Quotation</button>
+
+
+          <a href='/Quotation'>
+            <button type="submit" onClick={handleQuotation}>Get Quotation</button>
           </a>
-          
+
         </form>
       </div>
       <div className="map-section">
-       
+
       </div>
     </div>
   );

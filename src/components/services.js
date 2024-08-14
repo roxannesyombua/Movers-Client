@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Services.css"; 
 
 const Services = () => {
+
+    const navigate = useNavigate();
+
+  const handleBookingRedirect = () => {
+    navigate('/Booking');
+  }
+    
     return (
         <div className="package-deals">
             <header>
@@ -65,8 +73,8 @@ const Services = () => {
                     <li>Two Bedroom: 8000 KSh</li>
                 </ul>
             </section>
-            <button className="book-now-btn">
-                <a href="/Quotation"> Book Now </a>
+            <button className="book-now-btn" onClick={handleBookingRedirect}> Book Now
+                {/* <a href="/Quotation"> Book Now </a> */}
             </button>
 
             <footer>
