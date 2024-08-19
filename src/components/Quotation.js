@@ -4,7 +4,7 @@ import './Quotation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPeopleCarry } from '@fortawesome/free-solid-svg-icons';
 
-const Quotation = () => {
+const Quotation = ({ distance }) => {
   const { state } = useLocation();
   const { from, to, date, time, roomType } = state || {};
 
@@ -25,6 +25,10 @@ const Quotation = () => {
 
   const displayRoomType = roomType ? roomType.charAt(0).toUpperCase() + roomType.slice(1) : 'N/A';
   const roomCharge = roomCharges[roomType] || 0;
+
+  const transportUnitCost = 700; // Cost per unit distance
+  const transportUnits = distance ? Math.ceil(distance / 5) : 0; // Round up to the nearest whole unit
+  const transportCost = transportUnits * transportUnitCost;
 
   return (
     <div className="quotation-container">
@@ -48,7 +52,7 @@ const Quotation = () => {
             <strong>Time:</strong> {time || 'Time not provided'}
           </p>
           <p><strong>Property Type:</strong> <span className="highlight">{displayRoomType}</span></p>
-          <p><strong>Distance:</strong> 15km</p>
+          <p><strong>Distance:</strong> {distance ? `${distance.toFixed(2)} km` : 'Distance not provided'}</p>
         </div>
         <div className="to">
           <p><strong>To:</strong> {to || 'Destination not provided'}</p>
@@ -77,13 +81,13 @@ const Quotation = () => {
           <tr className="transport-row">
             <td>
               Transportation:<br />
-              Distance: 15 km<br />
-              Calculation: 15 km / 5 km<br />
-              per unit - 3 units<br />
-              Cost: 3 units * 700 KSh/unit
+              Distance: {distance ? `${distance.toFixed(2)} km` : 'N/A'}<br />
+              Calculation: {distance ? `${distance.toFixed(2)} km / 5 km` : 'N/A'}<br />
+              per unit - {transportUnits} units<br />
+              Cost: {transportUnits} units * {transportUnitCost} KSh/unit
             </td>
-            <td>2100</td>
-            <td>2100</td>
+            <td>{transportCost}</td>
+            <td>{transportCost}</td>
           </tr>
           <tr>
             <td>Basic Insurance coverage</td>
@@ -99,7 +103,7 @@ const Quotation = () => {
       </table>
 
       <div className="total-package">
-        <p><strong>Total Package cost:</strong> {roomCharge + 12100} KSh</p>
+        <p><strong>Total Package cost:</strong> {roomCharge + transportCost + 10000} KSh</p>
       </div>
 
       <div className="note-section">
