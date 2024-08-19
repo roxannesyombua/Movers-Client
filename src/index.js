@@ -3,11 +3,51 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Services from './components/services';
+import SignupForm from './components/SignupForm';
+import Login from './components/Login';
+import ContactUs from './components/Contactus';
+import Booking from './components/Booking';
+import Quotation from './components/Quotation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+ const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "/Services",
+    element: <Services />
+  },
+  {
+    path: "/SignupForm",
+    element: <SignupForm />
+  },
+  {
+    path: "/Login",
+    element: <Login />
+  },
+  {
+    path: "/Contact",
+    element: <ContactUs />
+  },
+  {
+    path: "/Booking",
+    element: <Booking />
+  },
+  {
+    path: "/Quotation",
+    element: <Quotation />
+  }
+  
+ ])
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

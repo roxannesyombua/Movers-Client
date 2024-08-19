@@ -1,0 +1,119 @@
+/* Home.css */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .hero-text h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .book-now-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 15px;
+    border: 25%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .services-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .services-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .service-card i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .best-movers-section {
+    background-color: #f9f9f9;
+    background-image: url();
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .best-movers-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .best-movers-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .best-movers-section li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .best-movers-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    
+  }
+  
