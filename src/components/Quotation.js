@@ -1,9 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Quotation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPeopleCarry } from '@fortawesome/free-solid-svg-icons';
 
 const Quotation = () => {
+
+    const navigate = useNavigate();
+
+    const handleAccept = () => {
+        console.log('accepted')
+        alert('Your booking has been successful. An agent will get to you shortly.');
+        setTimeout(() => {
+            navigate('/services');
+        }, 2000);
+    };
+
+    const handleDecline = () => {
+        console.log('declined')
+        alert('You have not registered for any booking.');
+        setTimeout(() => {
+            navigate('/services');
+        }, 2000);
+    };
+
+
     return (
         <div className="quotation-container">
             <header className="quotation-header">
@@ -16,7 +37,7 @@ const Quotation = () => {
                     <p className="client-name">Client: John Doe</p>
                 </div>
             </header>
-            
+
             <div className="addresses">
                 <div className="from">
                     <p><strong>From:</strong> Nairobi CBD</p>
@@ -74,6 +95,12 @@ const Quotation = () => {
             <div className="total-package">
                 <p><strong>Total Package cost:</strong> 18,600</p>
             </div>
+
+            <div className="action-buttons">
+                <button className="accept-button" onClick={handleAccept}>Accept</button>
+                <button className="decline-button" onClick={handleDecline}>Decline</button>
+            </div>
+
 
             <div className="note-section">
                 <p><strong>Note:</strong> 50% deposit required upon booking. Pay the balance due on the day of the move.</p>
